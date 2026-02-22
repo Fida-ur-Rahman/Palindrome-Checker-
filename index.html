@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palindrome Checker</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="Chacker.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-palindrome"></i> Palindrome Checker</h1>
+            <p class="subtitle">Check if a word, phrase, or number reads the same forwards and backwards. Enter text below to test if it's a palindrome.</p>
+        </header>
+        
+        <div class="content">
+            <div class="input-section">
+                <div class="input-group">
+                    <label for="text-input">Enter text to check:</label>
+                    <div class="input-wrapper">
+                        <input type="text" id="text-input" placeholder="Type a word, phrase, or number...">
+                        <button class="clear-btn" id="clear-btn" title="Clear input">
+                            <i class="fas fa-times"></i>
+                        </button>
+                        <button class="check-btn" id="check-btn">
+                            <i class="fas fa-check"></i> Check Palindrome
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="result-section" id="result-section">
+                <div class="result-icon" id="result-icon">
+                    <i class="fas fa-question-circle"></i>
+                </div>
+                <div class="result-text" id="result-text">Enter text to check</div>
+                <p class="palindrome-definition" id="palindrome-definition">
+                    A palindrome is a word, phrase, or sequence that reads the same forwards and backwards, ignoring spaces, punctuation, and capitalization.
+                </p>
+                <div class="palindrome-example" id="palindrome-example"></div>
+            </div>
+            
+            <div class="examples-section">
+                <h3 class="examples-title">Try these examples:</h3>
+                <ul class="examples-list" id="examples-list">
+                    <!-- Examples will be added by JavaScript -->
+                </ul>
+            </div>
+        </div>
+        
+        <footer>
+            <p>Palindrome Checker &copy; 2023 | Made with <i class="fas fa-heart" style="color:#e74c3c;"></i></p>
+        </footer>
+    </div>
+</body>
+<script src="Chacker.js"></script>
+</html>
